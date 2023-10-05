@@ -35,7 +35,11 @@ body {
   }
   &__button {
     border-radius: 30px;
+    text-decoration: none;
     background: #9c0332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 234.063px;
     height: 48.603px;
     flex-shrink: 0;
@@ -44,7 +48,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     cursor: url("./img/cursor.svg"), auto;
-    border: none;
     &:hover {
       background: #eb443f;
       transition: all 0.3s;
@@ -84,5 +87,6 @@ body {
     line-height: 32px;
     bottom: 32px;
     left: 32px;
+    text-decoration: none;
   }
 }
