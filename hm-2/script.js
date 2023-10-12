@@ -1,8 +1,10 @@
 let a = 10;
 alert(a);
-let iphone = 2007;
+a = 20;
+alert(a);
+const iphone = 2007;
 alert(iphone + ' - год выпуска первого Iphone');
-let creator = "Брендон Айк";
+const creator = "Брендон Айк";
 alert(creator + ' - создатель JavaScript');
 let first = 10;
 let second = 2;
