@@ -11,7 +11,7 @@ body {
   padding-right: calc(50% - 600px);
 }
 .header {
-  background-image: url(./img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,6 +32,7 @@ body {
     font-size: 18px;
     font-weight: 300;
     line-height: 32px;
+    width: 481px;
   }
   &__button {
     border-radius: 30px;
@@ -47,7 +48,7 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
-    cursor: url("./img/cursor.svg"), auto;
+    cursor: url("../img/cursor.svg"), auto;
     &:hover {
       background: #eb443f;
       transition: all 0.3s;
@@ -61,6 +62,7 @@ body {
   &-box {
     display: flex;
     gap: 0 32px;
+    flex-wrap: wrap;
   }
   &-content {
     position: relative;
@@ -71,13 +73,14 @@ body {
       background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
         url(<path-to-image>), lightgray 50% / cover no-repeat;
       transition: all 0.3s;
-      cursor: url("./img/cursor.svg"), auto;
+      cursor: url("../img/cursor.svg"), auto;
     }
   }
   &__image {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 100%;
   }
   &__text {
     position: absolute;
@@ -90,3 +93,5 @@ body {
     text-decoration: none;
   }
 }
+
+@import "mobile";

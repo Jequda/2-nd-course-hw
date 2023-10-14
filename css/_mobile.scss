@@ -1,0 +1,30 @@
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    background-image: url(../img/background_mobile.jpg);
+    &-box {
+      text-align: center;
+      align-items: center;
+      padding: 238px 0px 238px 0px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__text {
+      font-size: 14px;
+      width: 343px;
+    }
+    &__button {
+      margin-top: 0;
+    }
+  }
+  .game {
+    padding-top: 128px;
+    &-box {
+      gap: 32px;
+    }
+  }
+}
