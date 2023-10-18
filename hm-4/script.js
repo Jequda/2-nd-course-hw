@@ -27,10 +27,6 @@ while (n >= 50) {
 }
 console.log(n + " - результат деления 1000");
 console.log(num + " - количество итераций деления");
-let friday = 5;
-for (day = 1; day < 32; day++) {
-    if (day === friday) {
-        console.log("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
-        friday = friday + 7;
-    }
+for (day = 5; day < 32; day+=7) {
+        console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
 }
