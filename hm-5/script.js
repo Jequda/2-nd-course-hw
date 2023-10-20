@@ -18,8 +18,10 @@ function parity(n) {
 }
 console.log(parity(6));
 
-let square = (n) => n ** 2;
-console.log(square(5));
+let square = (n) =>{
+    console.log(n ** 2);
+}
+square(6);
 
 function square2(n) {
     n = n ** 2;
