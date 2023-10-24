@@ -16,7 +16,7 @@ arr = [];
 for (let i = 0; i < 3; i++) {
     arr[i] = []; 
     for (let j = 0; j < 3; j++) {
-        arr[i][j] = [1];
+        arr[i][j] = 1;
     }
 }
 console.log(arr);
@@ -30,15 +30,11 @@ console.log(arr.sort().filter((el) => el > 0 ));
 
 arr = [9, 8, 7, 6, 5];
 let userNumber = Number (prompt("Назовите число"));
-for (let i = 0; i < arr.length; i++) {
     if (arr.includes(userNumber)) {
         alert("Угадал");
-        break;
     } else {
         alert ("Не угадал");
-        break;
     }
-}
 
 const str = 'abcdef';
 arr = str.split('').reverse().join('');
@@ -49,11 +45,8 @@ for (let i = 0; i < 10; i++) {
     arr.push(Math.round(Math.random()* 9) + 1);
 }
 let n = 0;
-for (let i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length - 1; i++) {
     n = arr[i] + arr[i+1];
-    if (isNaN(n)) {
-        n = arr[i];
-    }
     console.log(n);
 }
 
