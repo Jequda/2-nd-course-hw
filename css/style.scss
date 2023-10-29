@@ -3,13 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
+
 .header {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
@@ -55,6 +58,7 @@ body {
     }
   }
 }
+
 .game {
   background: #000915;
   padding-top: 132px;
@@ -93,6 +97,7 @@ body {
     text-decoration: none;
   }
 }
+
 .seasons {
   background: #000915;
   display: flex;
@@ -130,6 +135,54 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
+    border: none;
+    cursor: url("../img/cursor.svg"), auto;
+    &:hover {
+      background: #eb443f;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.remember {
+  background: #000915;
+  display: flex;
+  padding-top: 282px;
+  padding-bottom: 282px;
+  gap: 135px;
+  flex-direction: row-reverse;
+  &-box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__title {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+  }
+  &__text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    width: 584px;
+  }
+  &__button {
+    border-radius: 30px;
+    text-decoration: none;
+    background: #9c0332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
     cursor: url("../img/cursor.svg"), auto;
     &:hover {
       background: #eb443f;

@@ -3,6 +3,7 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .header {
     background-image: url(../img/background_mobile.jpg);
     &-box {
@@ -21,13 +22,40 @@
       margin-top: 0;
     }
   }
+
   .game {
     padding-top: 128px;
     &-box {
       gap: 32px;
     }
   }
+
   .seasons {
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+    &-box {
+      text-align: center;
+      align-items: center;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__text {
+      font-size: 14px;
+      width: 343px;
+    }
+    &__button {
+      margin-top: 0;
+    }
+    &__image {
+      width: 344px;
+      height: 236px;
+    }
+  }
+
+  .remember {
     flex-direction: column;
     gap: 64px;
     padding-top: 51px;

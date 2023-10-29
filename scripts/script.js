@@ -1,5 +1,5 @@
 function seasonsGame() {
-    let  monthNumber = Number (prompt("Введите номер месяца"));
+    let monthNumber = Number(prompt("Введите номер месяца"));
     if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
         alert("Это зима");
     } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
@@ -10,5 +10,25 @@ function seasonsGame() {
         alert("Это осень");
     } else {
         alert("Такого месяца нет");
+    }
+}
+
+function rememberGame() {
+    let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arr = arr.sort(() => Math.random() - 0.5);
+    alert(arr);
+
+    let quest1 = prompt("Чему равнялся первый элемент массива?");
+    let quest2 = prompt("Чему равнялся последний элемент массива?");
+    if (quest1 == null || quest2 == null) {
+        alert("Вы не ввели ответ на один или несколько вопросов")
+    } else {
+        if (arr[0].toLowerCase() === quest1.toLowerCase() && arr[6].toLowerCase() === quest2.toLowerCase()) {
+            alert("Поздравляю, вы все угадали!");
+        } else if (arr[0].toLowerCase() === quest1.toLowerCase() || arr[6].toLowerCase() === quest2.toLowerCase()) {
+            alert("Вы были близки к победе!");
+        } else {
+            alert("Извините, вы ответили неверно.");
+        }
     }
 }
